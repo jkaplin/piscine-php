@@ -17,6 +17,7 @@ header {
 	grid-column: 1 / 4;
 	display: grid;
 	grid-template-columns: 10fr 4fr 1fr;
+	padding: 5px;
 }
 
 #left-bar {
@@ -30,6 +31,9 @@ header {
 }
 
 #right-bar {
+	height: 80%;
+	position: relative;
+	right: 20px;
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr 0.5fr 1fr 1fr 1fr;
@@ -37,12 +41,20 @@ header {
 }
 
 main {
+	position: relative;
 	padding: 10px;
 	grid-column: 2 / 3;
 }
 
 form {
+	position: absolute;
+	left: 6%;
+	top: 83%;
+	width: 30%;
 	background-color: #88FF89;
+	border-radius: 5px;
+	padding: 1px 10px;
+	padding-bottom: 30px;
 }
 
 #title {
@@ -79,12 +91,39 @@ aside > img {
 }
 
 #brick {
-	width: 200px;
+	display: block;
+	width: 150px;
 	margin: 0px auto;
-	background-size: 68px;
+	background-size: 40px;
 	background-image: url("resources/brick.jpg");
 	background-repeat: repeat;
 }
 
 .big-font {
+	font-weight: bold;
+	font-size: 2rem;
 }
+
+
+
+#chair {
+	position: absolute;
+	left: 32%;
+	top: 57%;
+	display: block;
+	width: 15%;
+	height: 40%;
+	border: 1px solid red;
+}
+
+#screen {
+	position: absolute;
+	left: 77%;
+	top: 55%;
+	display: block;
+	width: 20%;
+	height: 30%;
+	border: 1px solid red;
+}
+
+
