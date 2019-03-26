@@ -1,7 +1,12 @@
 #!/usr/bin/php
 <?php
-	while (($line = readline("Enter a number: ")) != NULL)
+	while (true)
 	{
+		print("Enter a number: ");
+		$line = fgets(STDIN);
+		if ($line == null)
+			break;
+		$line = str_replace("\n", "", $line);
 		if (is_numeric($line))
 		{
 			print("The number " . $line . " is ");
