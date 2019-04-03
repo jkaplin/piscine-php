@@ -2,13 +2,13 @@
 
 class Color
 {
-	static $verbose;
+	public static $verbose;
 
 	public $red;
 	public $green;
 	public $blue;
 
-	private function spaces($color_val)
+	private function _spaces($color_val)
 	{
 		$spaces ="";
 		for ($i = 0; $i < (3 - strlen(strval($color_val))); $i++)
@@ -18,9 +18,9 @@ class Color
 		return ($spaces);
 	}
 
-	private function color_info($red, $green, $blue)
+	private function _color_info($red, $green, $blue)
 	{
-		return ("Color( red: " . self::spaces($red) . $red . ", green: " . self::spaces($green) . $green . ", blue: " . self::spaces($blue) . $blue . " )");
+		return ("Color( red: " . self::_spaces($red) . $red . ", green: " . self::_spaces($green) . $green . ", blue: " . self::_spaces($blue) . $blue . " )");
 	}
 
 	public function __construct(array $kwargs)
@@ -40,7 +40,7 @@ class Color
 		}
 		if (isset(self::$verbose) and self::$verbose === true)
 		{
-			echo self::color_info($this->red, $this->green, $this->blue) . " constructed." . PHP_EOL;
+			echo self::_color_info($this->red, $this->green, $this->blue) . " constructed." . PHP_EOL;
 		}
 	}
 
@@ -48,13 +48,13 @@ class Color
 	{
 		if (isset(self::$verbose) and self::$verbose === true)
 		{
-			echo self::color_info($this->red, $this->green, $this->blue) . " destructed." . PHP_EOL;
+			echo self::_color_info($this->red, $this->green, $this->blue) . " destructed." . PHP_EOL;
 		}
 	}
 
 	public function __toString()
 	{
-		return(self::color_info($this->red, $this->green, $this->blue));
+		return(self::_color_info($this->red, $this->green, $this->blue));
 	}
 
 	public static function doc()

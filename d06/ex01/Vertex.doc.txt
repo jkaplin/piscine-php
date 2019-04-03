@@ -1,0 +1,14 @@
+
+<- Vertex ----------------------------------------------------------------------
+The Vertex class represents a point in space.
+
+An instance can be contructed from 3 coordinates: x axis, y axiz and z depth (all 3 are Mandatory):
+new Vertex( array( 'x' => 10, 'y' => 5, 'z' => 5 ) );
+
+And it can be given two more parameters: w (homogeneous coordinate) and a color represented by an instance of the Color class (these 2 parameters are optinal, if not provided w is set by default to 1.0 and color is set by default to white):
+new Vertex( array( 'x' => 10, 'y' => 5, 'z' => 10, 'w' => 2.0, 'color' => new Color(array('rgb' => 0xff)) );
+
+Any other use is undefined behaviour.
+
+The class provides the following methods :
+---------------------------------------------------------------------- Vertex ->
