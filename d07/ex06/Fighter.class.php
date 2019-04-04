@@ -2,17 +2,11 @@
 
 class Fighter
 {
-	private $name;
+	public $type;
 
-	public function __construct($name)
+	public function __construct($type)
 	{
-		$this->name = $name;
-	}
-
-	public function __get($atr)
-	{
-		if (isset($this->$atr))
-			return $this->$atr;
+		$this->type = $type;
 	}
 }
 
