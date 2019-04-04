@@ -1,0 +1,35 @@
+The Turns: activated-ship, Phases: Order phase, Movement Phase and Shoot Phase. New turn is after all ships of both players have been activated
+
+Grid: 150X150
+Dice: D6, 1D6, 2D6, 3D6... 3, 4, 5, 6 = '3+'
+
+Obstacle (Asteroid, Space-Station)
+Obstacle: size(width and length), color, position.
+
+Game-Zone (Grid, Obstacles, Fleets)
+
+Fleet (Spaceships, Starting-Position)
+Spaceship (Name, Size(width and length), Sprite(img_src), Health-Points(HP), Engine-Power(by power-points=PP), Speed, Handling, Shield, Weapon)
+
+
+class Game (Grid, Players, Turns)
+class Grid (size, Obstacles, the(2)Fleets)
+class Player (Fleet)
+class Turn (the(3)Phases)
+Abstract Class Phase()
+
+
+
+
+
+
+
+class Turn
+class Phase
+class Player
+class Game-Zone
+class Grid
+class Obstacle
+class Fleet
+class Spaceship
+class Weapon
