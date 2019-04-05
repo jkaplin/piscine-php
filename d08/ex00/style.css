@@ -1,0 +1,33 @@
+#grid {
+  border: 5px solid red;
+  display: flex;
+  flex-direction: column;
+}
+
+.row {
+  align-items: stretch;
+  display: flex;
+}
+
+.box {
+  height: 0.8vh;
+  flex-grow: 1;
+  border: 0.1px solid black;
+}
+
+.obstacle {
+  background-color: red;
+  border: 0.1px solid red;
+}
+
+.player1
+{
+  background-color: green;
+  border: 0.1px solid lightgreen;
+}
+
+.player2
+{
+  background-color: blue;
+  border: 0.1px solid lightblue;
+}

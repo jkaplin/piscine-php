@@ -12,6 +12,7 @@ Fleet (Spaceships, Starting-Position)
 Spaceship (Name, Size(width and length), Sprite(img_src), Health-Points(HP), Engine-Power(by power-points=PP), Speed, Handling, Shield, Weapon)
 
 
+
 class Game (Grid, Players, Turns)
 class Grid (size, Obstacles, the(2)Fleets)
 class Player (Fleet)
@@ -20,8 +21,8 @@ Abstract Class Phase()
 
 
 
-
-
+printing the grid once at the index.html using php variables and classes
+to change inidvidual boxes using ajax javascript depending on a php script deciding what to change
 
 
 class Turn
